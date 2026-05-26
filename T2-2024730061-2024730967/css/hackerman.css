@@ -1,0 +1,114 @@
+/* Hackerman theme: terminal-style black background with neon green text */
+:root {
+	--hack-bg: #000000;
+	--hack-text: #00ff41;
+	--hack-dim: rgba(0,255,65,0.06);
+	--hack-border: rgba(0,255,65,0.14);
+}
+
+html.hackerman, .hackerman, :root.hackerman {
+	background: var(--hack-bg) !important;
+}
+
+body, html {
+	background: #000 !important;
+	color: var(--hack-text) !important;
+}
+
+a, a:hover, a:active { color: var(--hack-text) !important; }
+
+/* Surface elements */
+.card, .table, .modal-content, .form-control, .form-select, .container, .table-responsive {
+	background: #000 !important;
+	color: var(--hack-text) !important;
+	border-color: var(--hack-border) !important;
+	box-shadow: none !important;
+}
+
+.table thead th {
+	background: transparent !important;
+	color: var(--hack-text) !important;
+	border-bottom: 1px solid var(--hack-border) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+	background: rgba(0,255,65,0.02) !important;
+}
+
+/* Buttons */
+.btn, .btn-primary, .btn-secondary, .btn-warning, .btn-danger {
+	background: transparent !important;
+	color: var(--hack-text) !important;
+	border: 1px solid var(--hack-border) !important;
+}
+.btn:hover, .btn:focus { background: rgba(0,255,65,0.02) !important; color: var(--hack-text) !important; }
+
+/* Forms */
+.form-control, .form-select, input[type="text"], input[type="password"], textarea {
+	background: #020202 !important;
+	color: var(--hack-text) !important;
+	border: 1px solid var(--hack-border) !important;
+}
+.form-control::placeholder { color: rgba(0,255,65,0.4) !important; }
+
+.bg-dark, .bg-secondary { background: #000 !important; color: var(--hack-text) !important; }
+
+code, pre, kbd, samp { color: var(--hack-text) !important; background: transparent !important; font-family: monospace !important; }
+
+/* subtle glow */
+body * { text-shadow: 0 0 4px rgba(0,255,65,0.08); }
+
+/* transitions */
+* { transition: background-color .12s linear, color .12s linear, border-color .12s linear; }
+
+/* Ensure images/tables with borders remain visible */
+img { filter: brightness(0.9) contrast(1.05); }
+
+/* Role-specific styles while Hackerman is active */
+.hackerman .role-evaluador .table,
+.hackerman .role-evaluador .table-responsive {
+	background: linear-gradient(180deg,#000,#030303) !important;
+	color: #b8ffcc !important;
+	border: 1px solid rgba(0,255,102,0.12) !important;
+}
+.hackerman .role-evaluador .table thead th {
+	background: rgba(0,255,102,0.04) !important;
+	color: #00ff66 !important;
+	border-bottom: 1px solid rgba(0,255,102,0.12) !important;
+}
+.hackerman .role-evaluador .table-striped > tbody > tr:nth-of-type(odd) > * {
+	background: rgba(0,255,102,0.02) !important;
+}
+.hackerman .role-evaluador .btn,
+.hackerman .role-evaluador .btn-primary,
+.hackerman .role-evaluador .btn-secondary {
+	background: transparent !important;
+	border: 1px solid rgba(0,255,102,0.18) !important;
+	color: #00ff66 !important;
+}
+
+.hackerman .role-administrador .table,
+.hackerman .role-administrador .table-responsive {
+	background: linear-gradient(180deg,#000,#060606) !important;
+	color: #00ff66 !important;
+	border: 1px solid rgba(85, 255, 88, 0.12) !important;
+}
+.hackerman .role-administrador .table thead th {
+	background: rgba(88, 255, 85, 0.04) !important;
+	color: #00ff66 !important;
+	border-bottom: 1px solid rgba(255,204,85,0.12) !important;
+}
+.hackerman .role-administrador .table-striped > tbody > tr:nth-of-type(odd) > * {
+	background: rgba(255,204,85,0.02) !important;
+}
+.hackerman .role-administrador .btn,
+.hackerman .role-administrador .btn-primary,
+.hackerman .role-administrador .btn-secondary {
+	background: transparent !important;
+	border: 1px solid rgb(13, 250, 57) !important;
+	color: #00ff66 !important;
+}
+
+/* Form placeholders tuned for hackerman+roles */
+.hackerman .role-evaluador .form-control::placeholder { color: rgba(0,255,102,0.35) !important; }
+.hackerman .role-administrador .form-control::placeholder { color: rgba(85, 255, 108, 0.35) !important; }
