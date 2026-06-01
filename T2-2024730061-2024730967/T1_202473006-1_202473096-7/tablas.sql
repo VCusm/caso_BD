@@ -254,7 +254,7 @@ CREATE TABLE PersonaEquipo (
   idSedes INT NOT NULL,
   FOREIGN KEY (idSedes) REFERENCES Sedes(id),
 
-  email VARCHAR(255) NOT NULL,
+  email VARCHAR(255) DEFAULT NULL,
   telefono VARCHAR(255) DEFAULT NULL,
 
   idRoles INT,

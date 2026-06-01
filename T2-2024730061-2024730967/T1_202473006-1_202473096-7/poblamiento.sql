@@ -2,7 +2,13 @@
 ############ Inserción de datos ###########################################
 ###########################################################################
 
+SET FOREIGN_KEY_CHECKS = 0;
+SET UNIQUE_CHECKS = 0;
+
+
 START TRANSACTION; 
+
+
 TRUNCATE TABLE Jefes;
 TRUNCATE TABLE Coordinadores;
 TRUNCATE TABLE AdministradorCT;
@@ -4624,4 +4630,8 @@ INSERT INTO PostulacionIniciativaCT (idAntecedentePostulacion, idAntecedenteInic
 (299, 299, 106, 299, 184, 1, 124800.50),
 (300, 300, 163, 300, 199, 4, 67890.00);
 
+
 COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;
+SET UNIQUE_CHECKS = 1;
