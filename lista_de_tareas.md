@@ -11,6 +11,7 @@
 - [x] conexion con power bi
 - [] dashboar 1
 - [] dashboard 2
+- [] respaldo BD
 
 ---
 
@@ -30,16 +31,42 @@
 
 - [] .pbix con dashboard 1 (Control general de postulaciones y presupuesto)
     - Encabezado (sección A: Encabezado - Filtros (Slicers))
-    - [] Año/mes
-    - [] sede/campus
-    - [] region de ejecución
-    - [] tipo iniciativa
+    - [x] Año/mes
+    - [x] sede/campus
+    - [x] region de ejecución
+    - [x] tipo iniciativa
+    - [x] convenio
+    - [x] tamaño empresa
+
+    - Tarjetas
+    - [x] todas las tarjetas
+
+    - Gráficos
+    - [x] 1
+    - [x] 2
+    - [x] 3
+    - [x] 4
+
+    - Tabla Detalle
+    - [x] codigo postulacion
+    - [x] fecha
+    - [x] iniciativa
+    - [] empresa
+    - [x] sede
+    - [x] region de impacto
+    - [x] region de ejecución
+    - [x] tipo iniciativa
     - [] convenio
-    - [] tamaño empresa
+    - [x] presupuesto
 
 --- 
 
-- [] .pbix con dashboard 2 
+- [] .pbix con dashboard 2
+    - [x] seccion A
+    - [x] Seccion B
+    - [] Seccion C
+        - [] Tabla
+    - [] especificaciones mínimas
 - [] abre sin errores
 - [] permite refrescar
 - requisitos obligatorios:
