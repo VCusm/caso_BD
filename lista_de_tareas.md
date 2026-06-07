@@ -2,7 +2,7 @@
 
 ## NOTAS
 
-- cambie NOT NULL que estaba en la tabla personas equipo, por DEAFULT NULL, para que no tire error al poblar la BD
+- cambie NOT NULL que estaba en la tabla personas equipo, por DEFAULT NULL, para que no tire error al poblar la BD
 - hice una modificación en el poblamiento de 4 lineas para desactivar la verificacion de claves foraneas y se pueda cargar sin tirar error. (tira error los TRUNCATE)
 - Listo el respaldo en la carpeta BD, lo hice con las mismas herramientas de phpMyAdmin. Funciona perfectamente.
 
@@ -12,7 +12,7 @@
 
 - [X] poblacion de datos
 - [X] conexion con power bi
-- [ ] dashboar 1
+- [ ] dashboard 1
 - [ ] dashboard 2
 - [X] respaldo BD
 
