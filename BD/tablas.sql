@@ -96,7 +96,7 @@ CREATE TABLE EstadoPostulacion (
 );
 
 INSERT INTO EstadoPostulacion(descripcion) VALUES
-('Revision'),
+('Revision'), -- en evaluación
 ('Aprobada'),
 ('Rechada'),
 ('Cerrada');
